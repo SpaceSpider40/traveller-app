@@ -15,11 +15,11 @@ export default class Login extends Component {
                 <div className={" p-10"}>
                     <p className={"text-7xl mx-2 my-10"}>Traveller</p>
 
-                    <Input className="m-2" label="Login" variant="bordered" type={"text"}/>
-                    <Input className="m-2" label="Password" variant="bordered" type={"password"}/>
+                    <Input className="m-2" label="Login" variant="faded" type={"text"}/>
+                    <Input className="m-2" label="Password" variant="faded" type={"password"}/>
 
                     <Button className="mx-2 my-1 w-full" variant="shadow">Login</Button>
-                    <div className="grid grid-cols-1 md:grid-cols-4">
+                    <div className="grid grid-cols-4">
                         <Button className="mx-2 my-1 w-full h-fit" isIconOnly  variant='shadow'>
                             <Image loading='lazy' isBlurred src={google_logo} sizes={'contain'}/>
                         </Button>
