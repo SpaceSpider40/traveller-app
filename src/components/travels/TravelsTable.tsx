@@ -1,5 +1,6 @@
 import {Component, ReactNode} from "react";
 import {Card, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow} from "@nextui-org/react";
+import { TravelsTableItem } from "./TravelsTableItem";
 
 interface IProps {
 
@@ -17,29 +18,29 @@ export class TravelsTable extends Component<IProps, IState> {
     }
 
     render(): ReactNode {
-        return <Card className={"h-full p-2"}>
-            <Table hideHeader aria-label="Travels collection table" className="h-full" removeWrapper>
+        return <div className={"h-full"}>
+            <Table hideHeader aria-label="Travels collection table" className="h-full border-none" removeWrapper>
                 <TableHeader>
                     <TableColumn>1</TableColumn>
                 </TableHeader>
                 <TableBody>
                     <TableRow key={"1"}>
                         <TableCell>
-                            Opis jakiegoś wyjazdu
+                            <TravelsTableItem/>
                         </TableCell>
                     </TableRow>
                     <TableRow key={"2"}>
                         <TableCell>
-                            Opis jakiegoś wyjazdu
+                        <TravelsTableItem/>
                         </TableCell>
                     </TableRow>
                     <TableRow key={"3"}>
                         <TableCell>
-                            Opis jakiegoś wyjazdu
+                            <TravelsTableItem/>
                         </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
-        </Card>
+        </div>
     }
 }

@@ -1,6 +1,6 @@
 import {Component, ReactNode} from "react";
 import {MainNavbar} from "../../components/MainNavbar.tsx";
-import {TravelsTable} from "./TravelsTable.tsx";
+import {TravelsTable} from "../../components/travels/TravelsTable.tsx";
 
 interface IProps {
 
